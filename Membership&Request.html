@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+	<meta charset="utf-8">
+	<title>Membership Information and Request</title>
+	<link rel="stylesheet" media="screen" href="style.css">
+</head>
+
+<body>
+	<h2 class="page_subtitle">Membership Information and Request</h2>
+	<div id="form">
+		<small><em>* required field</em></small>
+		<form action="https://webdevcit.com/displayvalues.php" method="get">
+			<p>
+				<label for="name">Name*:</label><br>
+				<input type="text" id="name" name="name" placeholder="Enter your Name here" required>
+			</p>
+			<p>
+				<label for="email">Email Address*:</label><br>
+				<input type="email" id="email" name="email" placeholder="Enter your Email Address here">
+			</p>
+			<p>
+				<label for="email">Contact Number:</label><br>
+				<input type="tel" id="number" name="number" placeholder="Enter your Contact Number here">
+			</p>
+			<p>
+				<label for="email">Preferred method of contact:</label><br>
+				<select id="method" name="method">
+					<option>Please select..</option>
+					<option value="Email">Email</option>
+					<option value="Zoom">Zoom</option>
+					<option value="Skype">Skype</option>
+					<option value="WhatsApp">WhatsApp</option>
+					<option value="Viber">Viber</option>
+				</select>
+			</p>
+			<p>
+				<label for="birthday">Date of birth:</label><br>
+				<input type="date" id="birthday" name="birthday">		
+			</p>
+			<p>
+				Level of experience in Lego<br>
+				<input type="radio" id="level1" name="level1" value="Novice">
+				<label for="level1">Novice</label><br>
+				<input type="radio" id="level2" name="level2" value="Competent">
+				<label for="level2">Competent</label><br>
+				<input type="radio" id="level3" name="level3" value="Expert">
+				<label for="level3">Expert</label>
+			</p>
+			<p>
+				<fieldset class="themes_field">
+					<legend>Preference of Lego Themes</legend>
+					<div id="themes_checkbox">
+						<input type="checkbox" id="theme1" name="theme1" value="Architecture">
+						<label for="theme1">Architecture</label>
+						<br>
+						<input type="checkbox" id="theme2" name="theme2" value="BOOST">
+						<label for="theme2">City</label>
+						<br>
+						<input type="checkbox" id="theme3" name="theme3" value="Classic">
+						<label for="theme3">Classic</label>
+						<br>
+						<input type="checkbox" id="theme4" name="theme4" value="Disney">
+						<label for="theme4">Disney</label>
+						<br>
+						<input type="checkbox" id="theme5" name="theme5" value="DUPLO">
+						<label for="theme5">DUPLO</label>
+						<br>
+						<input type="checkbox" id="theme6" name="theme6" value="Friends">
+						<label for="theme6">Friends</label>
+						<br>
+						<input type="checkbox" id="theme7" name="theme7" value="Harry Potter">
+						<label for="theme7">Harry Potter</label>
+						<br>
+						<input type="checkbox" id="theme8" name="theme8" value="LEGO ART">
+						<label for="theme8">LEGO ART</label>
+						<br>
+						<input type="checkbox" id="theme9" name="theme9" value="LEGO Originals">
+						<label for="theme9">LEGO Originals</label>
+						<br>
+						<input type="checkbox" id="theme10" name="theme10" value="LEGO Super Mario">
+						<label for="theme10">LEGO Super Mario</label>
+						<br>
+						<input type="checkbox" id="theme11" name="theme11" value="Marvel">
+						<label for="theme11">Marvel</label>
+						<br>
+						<input type="checkbox" id="theme12" name="theme12" value="Minions">
+						<label for="theme12">Minions</label>
+						<br>
+						<input type="checkbox" id="theme13" name="theme13" value="Overwatch">
+						<label for="theme13">Overwatch</label>
+						<br>
+						<input type="checkbox" id="theme14" name="theme14" value="Spider-Man">
+						<label for="theme14">Spider-Man</label>
+						<br>
+						<input type="checkbox" id="theme15" name="theme15" value="Star Wars">
+						<label for="theme15">Star Wars</label>
+						<br>
+						<input type="checkbox" id="theme16" name="theme16" value="Technic">
+						<label for="theme16">Technic</label>
+						<br>
+						<input type="checkbox" id="theme17" name="theme17" value="Xtra">
+						<label for="theme17">Xtra</label>
+					</div>
+					<div id="requests_textarea">
+						<label for="requests_box">Other Requests</label><br>
+						<textarea id="requests_box" name="requests_box" placeholder="Enter any other requests for other LEGO sets you like, or events you would like to specifically attend."></textarea>
+					</div>
+				</fieldset>		
+			</p> <!-- Validator says "No p element in scope but a p end tag seen." but this is the end tag of <p> in line 50. I don't know why this is catched as an error. I think this should existed in this position, not an error.-->
+			<p> 
+				<input type="submit" value="Submit">
+				<input type="reset" value="Cancel">
+			</p>
+		</form> 
+	</div>
+</body>
+</html>
